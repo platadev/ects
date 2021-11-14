@@ -1,0 +1,7 @@
+{
+	"name": "@plata/ects",
+	"entryPoints": ["src/index.ts", "src/core.ts", "src/global.ts"],
+	"readme": "none",
+	"out": "docs",
+	"theme": "default"
+}

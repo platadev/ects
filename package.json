@@ -1,0 +1,43 @@
+{
+	"name": "@plata/ects",
+	"version": "0.0.1",
+	"type": "module",
+	"description": "A small, fast and functional ecs library written in typescript",
+	"exports": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"license": "MIT",
+	"repository": "platadev/ects",
+	"author": {
+		"email": "albizures@vk.com",
+		"name": "Jose Albizures",
+		"url": "https://albizures.com"
+	},
+	"scripts": {
+		"clean": "rm -rf dist && rm -rf docs & rm tsconfig.tsbuildinfo",
+		"test": "jest --collect-coverage",
+		"prebuild": "yarn clean",
+		"build": "tsc",
+		"docs": "typedoc src/index.ts"
+	},
+	"files": [
+		"dist",
+		"src"
+	],
+	"dependencies": {
+		"@plata/commitlint": "^0.0.2",
+		"invariant": "^2.2.4"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.16.0",
+		"@babel/preset-env": "^7.15.8",
+		"@babel/preset-typescript": "^7.15.0",
+		"@plata/prettier-config": "^0.2.0",
+		"@plata/tsconfig": "^0.3.0",
+		"@types/invariant": "^2.2.35",
+		"@types/jest": "^27.0.2",
+		"husky": "^7.0.4",
+		"jest": "^27.3.1",
+		"typedoc": "^0.22.7",
+		"typescript": "^4.4.4"
+	}
+}

@@ -1,0 +1,15 @@
+{
+	"extends": "@plata/tsconfig/tsconfig.json",
+	"compileOnSave": false,
+	"compilerOptions": {
+		"outDir": "dist",
+		"composite": true,
+		"noUnusedParameters": false,
+		"strictNullChecks": true,
+		"rootDir": "./src",
+		"baseUrl": "./src",
+		"declarationDir": "dist"
+	},
+	"include": ["src/**/*"],
+	"exclude": ["node_modules", "dist", "*.config.js", "**/*.test.ts"]
+}
